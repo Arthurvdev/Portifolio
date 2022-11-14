@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(18, 6, 26);
+    height: 2000px;
+}
+
+
+.menu {
+    background-color: rgb(17, 8, 24);
+    margin-left: 350px;
+    width: 50%;
+    position: fixed;
+    margin-top: 15px;
+    border-radius: 40px;
+    box-shadow: 0px 3px 20px -10px #00ffff;
+    z-index: 1;
+}
+
+.menu ul{
+    position: relative;
+    list-style: none;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    display: block;
+    height: 40px;
+}
+
+.menu ul li{
+    float: left;
+    width: 120px; 
+}
+
+.menu ul li:hover {
+    
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu ul li:hover a {
+    color: aqua;
+    transition: 0.10s;
+    border: 2px solid #00ffff;
+    border-radius: 40px;
+}
+
+
+.menu ul li:active {
+    transform: scale(0.9);
+}
+
+.menu a{
+    border-radius: 40px;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    color:  white;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+     'Helvetica Neue', sans-serif;
+}
+
+/* Capa do site */
+
+.home {
+    
+    position: absolute;
+    padding: 50px;
+    width: 90%;
+    top: 50px;  
+}
+
+#p1 {
+    margin-top: 150px;
+    margin-left: 80px;
+    position: absolute;
+    color: aqua;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#nome {
+    margin-top: 165px;
+    margin-left: 80px;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.5s;
+}
+
+#nome:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#p2 {
+    margin-top: 210px;
+    margin-left: 80px;
+    position: absolute;
+    color: aqua;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: oblique;
+}
+
+#imagem_home {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 780px;
+    transition: (0.5s);
+
+    animation-name: imagem_home1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes imagem_home1{
+    0%{
+        top: 10px;
+    }
+
+    100%{
+        top: 25px
+    }
+}
+
+/*Botôes*/
+
+#botão {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 100px;
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#botão:hover{
+    background-color: rgb(68, 68, 68);
+}
+
+#botão:hover p{
+    color: white;
+}
+
+#botão:active{
+    transform: scale(0.8);
+}
+
+#botão p{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    float: right;
+    padding-left: 5px;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 60px;
+}
+
+#imagem_botão {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    margin-top: -22px;
+    margin-left: -60px;
+    position: absolute;
+}
+
+
+#botão_linkedin {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 280px;
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#botão_linkedin:hover{
+    background-color: rgb(68, 68, 68);
+}
+
+#botão_linkedin:hover p{
+    color: white;
+}
+
+#botão_linkedin:active{
+    transform: scale(0.8);
+}
+
+#botão_linkedin p{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    float: right;
+    padding-left: 5px;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 55px;
+}
+
+#imagem_botão_linkedin {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    margin-top: -22px;
+    margin-left: -60px;
+    position: absolute;
+}
+
+/*Sobre mim*/
+
+.sobre_mim {
+    margin-top: 45%;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+}
+
+#img {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 850px;
+    border-radius: 20px;
+    border: 2px solid white;
+    
+}
+
+#titulo_sobre_mim {
+    position: absolute;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 50px;
+}
+
+#texto_sobre_mim {
+    position: absolute;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 100px;
+    margin-top: 200px;
+    width: 50%;
+    font-style: italic;
+}
+
+#texto_sobre_mim2 {
+    font-style: italic;
+    position: absolute;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 100px;
+    margin-top: 300px;
+    width: 50%;
+}
+
+
+
+
+
